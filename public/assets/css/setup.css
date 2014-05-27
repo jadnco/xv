@@ -1,0 +1,155 @@
+.setup-wrap {
+	width: 466px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+	top: 30%;
+	text-align: center;
+}
+
+.setup-wrap h4 {
+	font: 26px/20px "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0;
+}
+
+.setup-wrap h4,
+.setup-wrap p {
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.setup-wrap p {
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.setup-wrap .step-dots {
+	list-style: none;
+	padding: 0;
+	height: 8px;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	margin: 0;
+	left: 50%;
+	margin-left: -22px;
+}
+
+.setup-wrap .step-dots li {
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background: #ccc;
+	margin: 0 5px;
+	float: left;
+	text-align: center;
+}
+
+.setup-wrap .step-dots li:first-of-type {
+	margin-left:0;
+}
+
+.setup-wrap .step-dots li:last-of-type {
+	margin-right:0;
+}
+
+.setup-wrap .step-dots li.current {
+	background: #000;
+}
+
+.setup-wrap input[type="text"],
+.setup-wrap input[type="password"],
+.setup-wrap input[type="submit"],
+.setup-wrap .next-button {
+	font: 16px "Open Sans", sans-serif;
+	border: 1px solid #000;
+	box-shadow: 0;
+	padding: 6px;
+	margin: 8px;
+	float: left;
+}
+
+.setup-wrap input[type="text"]:nth-of-type(1) {
+	margin-left: 0;
+}
+
+.setup-wrap input[type="text"]:nth-of-type(2) {
+	margin-right: 0;
+}
+.setup-wrap input[type="text"]:nth-of-type(-n+2) {
+	width: 211px;
+	margin-top: 30px;
+}
+
+.setup-wrap input[placeholder="Username"] {
+	width: 171px;
+	margin-left: 0;
+}
+
+.setup-wrap input[placeholder="Password"] {
+	width: 251px;
+	margin-right: 0;
+}
+
+.setup-wrap input[placeholder="Blog Name"] {
+	width: 336px;
+	margin-left: 0;
+}
+
+.setup-wrap input[type="submit"],
+.setup-wrap .next-button {
+	background: #000;
+	color: #fff;
+	width: 100px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.setup-wrap input[type="submit"]:hover,
+.setup-wrap .next-button:hover {
+	background: #fff;
+	color: #000;
+}
+
+.setup-wrap .errors {
+	font: 14px "Open Sans", sans-serif;
+	font-weight: 700;
+	margin-top: 12px;
+	text-align: center;
+}
+
+.setup-wrap code {
+	margin-top: 20px;
+	padding-left: 0;
+	padding-right: 0;
+	float: none;
+	display: inline-block !important;
+}
+
+.setup-wrap .go-config {
+	margin-top: 20px;
+}
+
+.blog-name-form input[type="text"] {
+	margin: 55px 0 0 0 !important;
+	width: 452px !important;
+}
+
+.blog-name-form input[type="submit"],
+.create-user-form input[type="submit"],
+.setup-wrap .next-button {
+	margin: 20px 0 0 0;
+	float: none;
+}
+
+.create-user-form input[type="submit"] {
+	margin-top: 10px;
+}
+
+.setup-wrap .next-button {
+	width: 100px !important;
+	display: inline-block !important;
+}

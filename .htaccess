@@ -1,0 +1,41 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Add a trailing slash
+RewriteCond %{REQUEST_URI} !(/$|\.)
+RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+
+# Redirect index.php page
+RewriteRule ^$ public/index.php [L]
+RewriteRule ^page/([^/\.]+)/$ public/index.php?page=$1 [L]
+
+RewriteRule ^admin/$ public/admin/login.php [L]
+
+# Post redirection
+RewriteRule ^post/([^/\.]+)/([^/\.]+)/$ public/post.php?post=$1&title=$2 [L]
+
+# Redirect setup.php page
+RewriteRule ^setup/$ public/setup.php [L]
+RewriteRule ^setup/([^/\.]+)/?$ public/setup.php?step=$1 [L]
+
+# Redirect new.php page
+RewriteRule ^new/$ public/admin/new.php [L]
+
+# Redirect edit.php page
+RewriteRule ^edit/$ public/admin/edit.php [L]
+RewriteRule ^edit/([^/\.]+)/$ public/admin/edit.php?post=$1 [L]
+
+# Redirect create.php page
+RewriteRule ^create/$ public/admin/create.php [L]
+
+# Redirect login.php page
+RewriteRule ^login/$ public/admin/login.php [L]
+
+# Redirect logout.php page
+RewriteRule ^logout/$ public/admin/logout.php [L]
+
+# Redirect save.php page
+RewriteRule ^save/$ public/admin/save.php [L]
+RewriteRule ^save/([^/\.]+)/$ public/admin/save.php?post=$1 [L]
